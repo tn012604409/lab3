@@ -22,12 +22,11 @@ int main(){
 	std::sort(CowVector.begin(),CowVector.end(),myobject);
 	
 	for(std::vector<int>::iterator it=CowVector.begin();it!=CowVector.begin()+5;++it){
-		sum+=*it;
-		std::cout<<' '<<*it;
+		sum+=*it;	//take the numbers into order
+	//	std::cout<<' '<<*it;
 	//	std::cout<<' '<<sum;
-		std::cout<<' ';
+	//	std::cout<<' ';
 	}
-	std::cout<<'\n';
 	std::cout<<' '<<sum;								
 	std::cout<<'\n';
 return 0;
