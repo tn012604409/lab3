@@ -1,0 +1,53 @@
+  A:
+  F74036116@2015cpp:~/lab3$ g++ -o lab3 lab3.cpp
+  F74036116@2015cpp:~/lab3$ ./lab3
+  2032
+   
+  B:
+  
+  1.
+  size1000
+  sort(): 0 seconds
+  v1/v2 are different.
+  insertion_sort(): 0.1 seconds
+  v1/v2 are the same.
+  2.
+  size=10000
+  sort(): 0 seconds
+  v1/v2 are different.
+  insertion_sort(): 1.28 seconds
+  v1/v2 are the same.
+ 
+  3.
+  size=100000
+  sort(): 0.04 seconds
+  v1/v2 are different.
+  insertion_sort(): 128.2 secondss
+  v1/v2 are the same.
+ 
+  4.
+ size = 1000000
+ sort(): 0.31 seconds
+ v1/v2 are different.
+ insertion_sort(): 7577.89 seconds
+ v1/v2 are the same.
+  
+ Explain:
+  
+  the sort() in c++::O(nlogn)
+  see the result 3  4
+  0.04/0.52=1/13
+  (100000*log100000)/(1000000*log1000000)=5/60=1/12
+  1/13 is smaller than 1/12
+ 
+  insertion sort:O(n^2)
+ 
+  seeing the result 1  2
+  (1000/10000)^2=1/100 equal to 0.1/1.28
+  seeing the result 2  3
+  (10000/100000)^2=1/100equal to1.28/128.2
+ 
+  if n=10,then the time will take n^2=100
+
+
+So O(nlogn)run faster than O(n^2).
